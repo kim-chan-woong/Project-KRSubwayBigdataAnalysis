@@ -13,7 +13,7 @@
 - spark cluster는 구축되어있는 hadoop cluster의 yarn위에서 구동된다.   
 - hive2 thrift server를 통해 spark에서 hive 테이블을 읽고, 쓸 수 있도록 한다.   
 - zeppelin과 연동하여 spark(scala)코드를 수행, sparkSQL을 통해 테이블 분석, 시각화   
-![Screenshot_49](https://user-images.githubusercontent.com/66659846/114012069-d8895400-98a0-11eb-9f14-58e3c8e40390.png)   
+![Screenshot_50](https://user-images.githubusercontent.com/66659846/114016084-70893c80-98a5-11eb-91e3-5ec4246347e9.png)   
 # 환경 및 스펙   
 Virtual Box - 6.1   
 MobaXterm - 8.6   
@@ -26,3 +26,11 @@ Zookeeper - 3.4.10
 Spark - 3.1.0   
 Zepplein - 0.9.0   
 # 서버 구성   
+nn01: 하둡 클러스터의 액티브 네임노드, 저널노드, 주키퍼, 하이브 마스터, 나이파이 마스터 역할   
+rm01: 하둡 클러스터의 스탠바이 네임노드, 저널노드, 리소스 매니저, 주키퍼, 스파크 클러스터의 마스터, 제플린 마스터 역할   
+jn01: 하둡 클러스터의 저널노드, 주키퍼   
+dn01: 하둡 클러스터의 노드 매니저, 데이터 노드, 스파크 클러스터의 워커 노드   
+dn02: 하둡 클러스터의 노드 매니저, 데이터 노드, 스파크 클러스터의 워커 노드   
+dn03: 하둡 클러스터의 노드 매니저, 데이터 노드, 스파크 클러스터의 워커 노드   
+getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데이터 수집, 배포 역할   
+![Screenshot_52](https://user-images.githubusercontent.com/66659846/114016090-72530000-98a5-11eb-9172-1d450bc036e1.png)   
