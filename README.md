@@ -44,4 +44,12 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ![Screenshot_55](https://user-images.githubusercontent.com/66659846/114018644-6e74ad00-98a8-11eb-9d75-fbd87e90c897.png)
 ## 수집 코드 실행, nn01 서버에 배포   
 ![Screenshot_56](https://user-images.githubusercontent.com/66659846/114019944-fa3b0900-98a9-11eb-9030-68ddcaff72a5.png)  
+![Screenshot_59](https://user-images.githubusercontent.com/66659846/114021258-78e47600-98ab-11eb-802d-59b451925259.png)   
 ## Nifi flow   
+1. GetFile: getdataserver에서 nn01서버의 지정된 경로에 데이터가 배포되면, 그 데이터를 Nifi 상으로 가져오고, 로컬의 데이터는 삭제   
+2. PutHDFS: 수집된 원본 데이터(.csv)파일을 지정된 HDFS 경로에 put   
+3. ReplaceText: HDFS에 파일이 들어오면 Hive 외부 테이블을 생성하고 새롭게 들어온 파일의 경로를 location하여 csv파일을 테이블화 하도록 HiveQL문을 작성   
+4. PutHiveQL: 작성한 HiveQL문 실행   
+5. LogAttribute: 각 프로세스별 로그 확인   
+6. Queued: 프로세스별 성공 시 데이터 이동 및 변환을 확인하고, 필요 시 파일 형태로 바로 추출하기 위함
+![Screenshot_58](https://user-images.githubusercontent.com/66659846/114021269-7b46d000-98ab-11eb-88b6-a629102b4690.png)   
