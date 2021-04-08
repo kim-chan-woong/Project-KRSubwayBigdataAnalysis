@@ -71,5 +71,6 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 2. 전체 통계 및 분석을 위해 각 년도별 테이블을 통합한 테이블 생성, Hive 내에서 생성 확인      
 (* OpenCSVSerde를 사용해 원본 csv 파일을 hive테이블화 하는 과정에서 모든 컬럼이 string으로 되어있으므로 승, 하차 인원의 데이터의 형을 int로 변환)   
 ![Screenshot_77](https://user-images.githubusercontent.com/66659846/114027093-fd39f780-98b1-11eb-8b95-6ac9324eceec.png)   
+![Screenshot_78](https://user-images.githubusercontent.com/66659846/114027585-7b969980-98b2-11eb-9c32-818fa6ac6e27.png)   
 ## spark를 활용하여 HiveQL문 실행 및 zeppelin 시각화    
 ![Screenshot_78](https://user-images.githubusercontent.com/66659846/114027585-7b969980-98b2-11eb-9c32-818fa6ac6e27.png)   
