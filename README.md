@@ -75,4 +75,4 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ![Screenshot_82](https://user-images.githubusercontent.com/66659846/114028746-c7960e00-98b3-11eb-8afb-1f2c03b3644c.png)   
 ![Screenshot_83](https://user-images.githubusercontent.com/66659846/114028753-c8c73b00-98b3-11eb-925c-84f1e97474ea.png)   
 ## spark를 활용하여 HiveQL문 실행 및 zeppelin 시각화    
-
+### 결과1 연도별 지하철 역 개수의 변화
