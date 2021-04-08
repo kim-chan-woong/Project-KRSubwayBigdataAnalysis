@@ -12,4 +12,5 @@
 3. Spark Cluster 구축 및 Hive 연동 후 Zeppelin 작업   
 - spark cluster는 구축되어있는 hadoop cluster의 yarn위에서 구동된다.   
 - hive2 thrift server를 통해 spark에서 hive 테이블을 읽고, 쓸 수 있도록 한다.   
-- zeppelin과 연동하여 spark(scala)코드를 수행, 시각화
+- zeppelin과 연동하여 spark(scala)코드를 수행, 시각화   
+![Screenshot_49](https://user-images.githubusercontent.com/66659846/114012069-d8895400-98a0-11eb-9f14-58e3c8e40390.png)   
