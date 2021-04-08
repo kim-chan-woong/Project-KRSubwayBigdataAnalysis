@@ -66,5 +66,8 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 - zeppelin: rm01:8899
 - spark master UI: rm01:8080
 - spark context UI: rm01:7077   
+1. HiveContext 객체 생성   
+2. HiveQL 수행, test DB(subway데이터 저장 데이터 베이스) 접근   
+3. 전체 통계 및 분석을 위해 파일에서 테이블화 된 각 년도별 데이터를 통합   
 ![Screenshot_72](https://user-images.githubusercontent.com/66659846/114025807-7df7f400-98b0-11eb-9616-7c26e7ea8012.png)    
 
