@@ -68,6 +68,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 - spark context UI: rm01:7077   
 1. HiveContext 객체 생성   
 2. HiveQL 수행, test DB(subway데이터 저장 데이터 베이스) 접근   
-3. 전체 통계 및 분석을 위해 파일에서 테이블화 된 각 년도별 데이터를 통합   
+3. 전체 통계 및 분석을 위해 각 년도별 테이블을 통합한 테이블 생성, Hive 내에서 생성 확인      
+(* OpenCSVSerde를 사용해 원본 csv 파일을 hive테이블화 하는 과정에서 모든 컬럼이 string으로 되어있으므로 승, 하차 인원의 데이터의 형을 int로 변환)   
 ![Screenshot_72](https://user-images.githubusercontent.com/66659846/114025807-7df7f400-98b0-11eb-9616-7c26e7ea8012.png)    
 
