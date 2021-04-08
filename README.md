@@ -66,5 +66,5 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 - zeppelin: rm01:8899
 - spark master UI: rm01:8080
 - spark context UI: rm01:7077   
-![Screenshot_70](https://user-images.githubusercontent.com/66659846/114025565-35403b00-98b0-11eb-91f0-bbb504fb1e1b.png)   
+![Screenshot_72](https://user-images.githubusercontent.com/66659846/114025807-7df7f400-98b0-11eb-9616-7c26e7ea8012.png)    
 
