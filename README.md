@@ -1,4 +1,4 @@
-# subway-api-data-DW-Analysis-BI   
+## subway-api-data-DW-Analysis-BI   
 # PROCESS      
 1. 원천 데이터 수집 및 HDFS 적재   
 - 서울 열린데이터 광장의 지하철 이용 관련 데이터 API 키 발급 및 호출   
@@ -35,4 +35,4 @@ dn03: 하둡 클러스터의 노드 매니저, 데이터 노드, 스파크 클�
 getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데이터 수집, 배포 역할   
 ![Screenshot_52](https://user-images.githubusercontent.com/66659846/114016090-72530000-98a5-11eb-9172-1d450bc036e1.png)   
 ![Screenshot_53](https://user-images.githubusercontent.com/66659846/114016985-6a479000-98a6-11eb-90a5-4d8d1b32ef63.png)   
-# RESULT
+## RESULT
