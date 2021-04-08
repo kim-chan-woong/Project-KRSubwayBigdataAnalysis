@@ -77,6 +77,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ## spark를 활용하여 HiveQL문 실행 및 zeppelin 시각화    
 ### 결과2: 연도별 지하철 역 개수의 변화  
 - 지하철 역의 개수는 꾸준히 늘고 있다.   
+
 ![Screenshot_87](https://user-images.githubusercontent.com/66659846/114030441-6a02c100-98b5-11eb-8db2-ea2e70bec71c.png)   
 ### 결과3: 연도별 승, 하차 인원 합계   
 - 전체적으로 승차 인원과 하차 인원의 차이는 크게 나지 않았다.   
