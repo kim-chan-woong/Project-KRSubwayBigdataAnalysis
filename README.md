@@ -56,3 +56,5 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ## HDFS 적재 결과(nn01:9870)   
 - 폴더 구조:hdfs://user/subway_data/YYYY/subway_YYYY.csv
 ![Screenshot_62](https://user-images.githubusercontent.com/66659846/114023087-6834ff80-98ad-11eb-9ee2-8d791a7c0acf.png)   
+![Screenshot_64](https://user-images.githubusercontent.com/66659846/114023402-c9f56980-98ad-11eb-9ab5-6c3f26be5451.png)   
+## HIVE 테이블화 결과   
