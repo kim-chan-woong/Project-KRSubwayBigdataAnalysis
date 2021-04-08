@@ -77,7 +77,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ## spark를 활용하여 HiveQL문 실행 및 zeppelin 시각화    
 ### 결과2: 연도별 지하철 역 개수의 변화  
 - 지하철 역의 개수는 꾸준히 늘고 있다.   
-- 2015년 12월 31일 (549개 역), 2020년 12월 31일 (597개 역)
+- 2015년 12월 31일 (549개 역), 2020년 12월 31일 (597개 역)   
 ![Screenshot_96](https://user-images.githubusercontent.com/66659846/114037794-42fbbd80-98bc-11eb-8fd0-e323ef8ca041.png)   
 ![Screenshot_97](https://user-images.githubusercontent.com/66659846/114037802-43945400-98bc-11eb-981b-46c8f62162f8.png)   
 ![Screenshot_98](https://user-images.githubusercontent.com/66659846/114037805-442cea80-98bc-11eb-922a-06fc7b308ca9.png)   
