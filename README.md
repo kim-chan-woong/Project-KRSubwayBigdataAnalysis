@@ -82,3 +82,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 - 전체적으로 승차 인원과 하차 인원의 차이는 크게 나지 않았다.   
 - 2015년 ~ 2019년까지는 큰 변동이 없었으나 2020년 갑작스레 줄어든 것으로 보아 코로나의 영향이 끼쳤음을 추측할 수 있다.   
 ![Screenshot_88](https://user-images.githubusercontent.com/66659846/114031013-e8f7f980-98b5-11eb-8e55-e4ed3879463a.png)   
+### 결과3: 6년간 데이터 통합 호선별 승, 하차 인원 합계 TOP 10   
+![Screenshot_89](https://user-images.githubusercontent.com/66659846/114032435-43458a00-98b7-11eb-9b42-9dd62c72d9c9.png)   
+![Screenshot_90](https://user-images.githubusercontent.com/66659846/114032437-43de2080-98b7-11eb-89d8-9df25aa93a37.png)   
+![Screenshot_91](https://user-images.githubusercontent.com/66659846/114032442-4476b700-98b7-11eb-93de-0a25628f2d38.png)   
