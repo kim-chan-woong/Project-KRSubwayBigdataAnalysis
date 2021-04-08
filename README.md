@@ -53,3 +53,6 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 5. LogAttribute: 각 프로세스별 로그 확인   
 6. Queued: 프로세스별 성공 시 데이터 이동 및 변환을 확인하고, 필요 시 파일 형태로 바로 추출하기 위함
 ![Screenshot_58](https://user-images.githubusercontent.com/66659846/114021269-7b46d000-98ab-11eb-88b6-a629102b4690.png)   
+## HDFS 적재 결과(nn01:9870)   
+- 폴더 구조:hdfs://user/subway_data/YYYY/subway_YYYY.csv
+![Screenshot_62](https://user-images.githubusercontent.com/66659846/114023087-6834ff80-98ad-11eb-9ee2-8d791a7c0acf.png)   
