@@ -44,7 +44,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ## getdataserver & jupyter notebook 수집 환경 구축(getdataserver:8887)   
 ![Screenshot_55](https://user-images.githubusercontent.com/66659846/114018644-6e74ad00-98a8-11eb-9d75-fbd87e90c897.png)
 ## 수집 코드 실행, nn01 서버에 배포   
-![Screenshot_60](https://user-images.githubusercontent.com/66659846/114022642-f3fa5c00-98ac-11eb-894d-92c94c5993b2.png)   
+![Screenshot_92](https://user-images.githubusercontent.com/66659846/114032914-c1a22c00-98b7-11eb-8669-a9fab4ed2d8b.png)   
 ![Screenshot_59](https://user-images.githubusercontent.com/66659846/114021258-78e47600-98ab-11eb-802d-59b451925259.png)   
 ## Nifi flow(nn01:18080)   
 1. GetFile: getdataserver에서 nn01서버의 지정된 경로에 데이터가 배포되면, 그 데이터를 Nifi 상으로 가져오고, 로컬의 데이터는 삭제   
