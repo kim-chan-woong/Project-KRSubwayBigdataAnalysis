@@ -87,4 +87,5 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ![Screenshot_89](https://user-images.githubusercontent.com/66659846/114032435-43458a00-98b7-11eb-9b42-9dd62c72d9c9.png)   
 ![Screenshot_90](https://user-images.githubusercontent.com/66659846/114032437-43de2080-98b7-11eb-89d8-9df25aa93a37.png)   
 ![Screenshot_91](https://user-images.githubusercontent.com/66659846/114032442-4476b700-98b7-11eb-93de-0a25628f2d38.png)   
-### 결과5: 6년간 데이터 통합 역 명별 승, 하차 인원 합계 TOP 10
+### 결과5: 6년간 데이터 통합 역 명별 승, 하차 인원 합계 TOP 10   
+![Screenshot_94](https://user-images.githubusercontent.com/66659846/114034150-e3e87980-98b8-11eb-9d6e-9b01ae297c77.png)   
