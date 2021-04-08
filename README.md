@@ -59,7 +59,7 @@ getdataserver: 아나콘다3 환경에서의 주피터 노트북 실행 및 데�
 ![Screenshot_62](https://user-images.githubusercontent.com/66659846/114023087-6834ff80-98ad-11eb-9ee2-8d791a7c0acf.png)   
 ![Screenshot_64](https://user-images.githubusercontent.com/66659846/114023402-c9f56980-98ad-11eb-9ab5-6c3f26be5451.png)   
 ## HIVE 테이블화 결과   
-![Screenshot_65](https://user-images.githubusercontent.com/66659846/114023703-2b1d3d00-98ae-11eb-86d6-c08bd4823bf7.png)   
+![Screenshot_66](https://user-images.githubusercontent.com/66659846/114024870-800d8300-98af-11eb-9dc8-680c836935d7.png)      
 ## Zeppelin 환경에서 Spark-Hive 연결 및 쿼리 분석   
 - zeppelin 사용자 계정, 패스워드, 포트 설정 및 spark와 연동 설정 후 spark가 hive metastore의 thrift server를 통해 원격 서버의 hive에 연결     
 - 기존 하둡 클러스터의 yarn 위에서 동작하기 위해 파일 설정 다수 필요   
