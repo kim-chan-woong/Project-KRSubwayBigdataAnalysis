@@ -1,0 +1,12 @@
+[참조]
+https://pythonq.com/so/apache-spark/1827738
+
+spark cluster에 hive-site.xml 작성
+vi $SPARK_HOME/conf/hive-site.xml
+<configuration>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://192.168.56.100:9083</value>
+    </property>
+</configuration>
+

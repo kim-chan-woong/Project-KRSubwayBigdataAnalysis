@@ -1,0 +1,9 @@
+고정 ip 설정
+hostname
+/etc/hosts
+selinux 해제
+방화벽 해제
+타임존 변경 timedatectl set-timezone Asia/Seoul
+yum -y update
+yum install -y net-tools
+yum install -y wget
