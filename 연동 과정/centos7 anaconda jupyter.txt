@@ -1,0 +1,39 @@
+[참조]
+https://growingdevl.tistory.com/11
+
+아나콘다사이트에서 해당 버전 링크 주소 복사
+
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+
+enter
+라이센스 동의 yes
+설치경로 확인 후 yes
+초기화 yes
+
+source .bashrc
+
+주피터 노트북 원격 띄우기
+jupyter notebook --generate-config
+vi /root/.jupyter/jupyter_notebook_config.py
+
+c.NotebookApp.ip = '사용할 IP 주소'
+c.NotebokkApp.open_browser = False
+c.NotebookApp.port = XXXX
+
+수정 후 python 스크립트 실행
+from IPython.lib import passwd
+passwd()
+키 복사
+'sha1:d29bbd96d3dd:aeb29adc30dec52c3d2110f2fd1ef663ec96b958'
+
+vi /root/.jupyter/jupyter_notebook_config.py
+c.NotebookApp.password = 'sha1:f0bf7a023f60:25920410f68d70c03175e3fec4619c497b84193f'
+
+실행
+jupyter notebook --allow-root
+
+웹포트
+192.168.56.100:8887
+
+종료
+ctrl + c -> y
