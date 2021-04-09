@@ -1,0 +1,57 @@
+// 하이브 연동 및 스파크 객체 생성
+import org.apache.spark.sql.hive.HiveContext
+
+val hiveContext = new org.apache.spark.sql.hive.HiveContext(sc)
+
+hiveContext.sql("USE test").collect().foreach(println)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 6년간 데이터 통합 테이블 생성
+create table result (
+    select '2015' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2015 where use_dt!='USE_DT' union
+    select '2016' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2016 where use_dt!='USE_DT' union
+    select '2017' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2017 where use_dt!='USE_DT' union
+    select '2018' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2018 where use_dt!='USE_DT' union
+    select '2019' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2019 where use_dt!='USE_DT' union
+    select '2020' as year, use_dt, line_num, sub_sta_nm, cast(ride_pasgr_num as int) , cast(alight_pasgr_num as int), work_dt from subway_2020 where use_dt!='USE_DT')
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 6년간 전체 데이터 행 수 및 모든 지하철 승, 하차 기록 합계
+select count(*) as all_data, sum(ride_pasgr_num), sum(alight_pasgr_num)
+from result
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 연도별 지하철 역 개수(각 연도별 12.31일 기준)
+select year, use_dt, count(*)
+from result where use_dt like '%1231'
+group by year, use_dt
+order by count(*)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 연도별 승, 하차 기록 합계
+select year, sum(ride_pasgr_num), sum(alight_pasgr_num)
+from result
+group by year
+order by sum(ride_pasgr_num) desc, sum(alight_pasgr_num) desc
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 6년간 호선별 승, 하차 기록 합계 TOP 10
+select a.*
+from (
+    select line_num, sum(ride_pasgr_num) as ride_pasgr, sum(alight_pasgr_num) as alight_pasgr,
+    rank() over (order by sum(ride_pasgr_num) desc) ranking1,
+    row_number() over (order by sum(ride_pasgr_num) desc) ranking2
+    from result
+    group by line_num) a
+where ranking1 <= 10
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%sql
+-- 6년간 역별 승, 하차 기록 합계
+select a.*
+from (
+    select sub_sta_nm, sum(ride_pasgr_num) as ride_pasgr, sum(alight_pasgr_num) as alight_pasgr,
+    rank() over (order by sum(ride_pasgr_num) desc) ranking1,
+    row_number() over (order by sum(ride_pasgr_num) desc) ranking2
+    from result
+    group by sub_sta_nm) a
+where ranking2 <= 10
